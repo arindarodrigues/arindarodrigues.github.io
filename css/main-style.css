@@ -1,0 +1,175 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+
+@font-face {
+  font-family: "Geotica 2012";
+  src: url("../assets/fonts/Geotica_2012.otf");
+}
+
+/* Global Styling */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0 center;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: 'Roboto Slab', sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  max-width: 1800px;
+  background-color: #62603e;
+}
+
+.bg-img {
+  background: url("../assets/images/bg.jpg") no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+
+  width: 100%;
+}
+
+/*Typography */
+h1 {
+  font-size: 2.2em;
+  font-family: 'Geotica 2012', sans-serif;
+}
+
+.display-1 {
+  font-size: 2.5em;
+  font-family: 'Geotica 2012', sans-serif;
+  font-weight: 300;
+  color: #CFE769;
+  text-shadow: 1px 1px #444;
+}
+
+h2 {
+  font-size: 1.6em;
+  padding-top: 1em;
+}
+
+p, span {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.lead {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 600;
+  color: #CFE769;
+  text-shadow: 0.5px 0.5px #444;
+}
+
+/* Links */
+a:focus,
+a:hover {
+  color: #f8f7f6;
+  text-decoration: none;
+  text-shadow: 1px 1px #766D2D;
+}
+
+.logo-social-media{
+  background-color: #62603e;
+  width: 100%;
+}
+
+/* Social Media */
+.social-media {
+  max-width: 100%;
+  padding-top: 5%;
+}
+.social-name-link {
+  font-size: 2em;
+  padding: 0.3em;
+  text-shadow: 1px 1px #444;
+}
+
+/* Logo */
+.avatar {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  border-radius: 50%;
+  border: solid 5px #f8f7f6;
+}
+/*Jumbotron */
+.jumbotron {
+  background: transparent;
+  background: rgba(0,0,0,0.2);
+  margin: 5%;
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.author-text {
+  margin: 1%;
+  padding: 1em;
+}
+
+/*----------------------------------------*/
+/* Media Queries */
+@media (min-width: 768px) {
+  .jumbotron {
+    width: 65%;
+  }
+
+  .logo-social-media{
+    width: 35%;
+    height: 100%;
+    height: 100vh;
+  }
+
+  /*Typography */
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .display-1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  p, span {
+    font-size: 1.3em;
+  }
+
+  .lead {
+    font-size: 1.6em;
+  }
+
+}
